@@ -1,2 +1,5 @@
 # bit06exercises
-Ejercicios
+
+## Ejercicios
+
+### Autor: Donovan Cano
