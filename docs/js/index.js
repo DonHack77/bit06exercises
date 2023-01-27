@@ -11,7 +11,7 @@ function login(){
             '!Perfecto!',
             'Ahora presiona OK',
             'success');
-        window.open("http://127.0.0.1:5500/docs/ejercicios.html")
+        window.open("https://donhack77.github.io/bit06exercises/ejercicios.html")
     } else{
         Swal.fire({
             icon: 'error',
