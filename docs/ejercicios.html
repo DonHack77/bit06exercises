@@ -14,65 +14,243 @@
   </head>
 
   <body>
-    <h1>Ejercicios</h1>
-    <hr />
-    <h2>1). Suma de dos numeros</h2>
-
-    <form id="form1">
+    <h1>Ejercicios En JavaScript</h1> <hr/>
+    <h2>1). Pedir nombre al usuario y saludarlo</h2>
+    <form id="formName">
       <label>
-        Ingrese primer numero
+        Ingrese Su Nombre:
+        <input type="text" name="name" />
+      </label>
+      <label>
+        Ingrese Su Apellido:
+        <input type="text" name="surname" />
+      </label>
+      <button type="submit">Saludar</button>
+    </form> 
+    <h5 id="greet"></h5><hr/>
+
+    <h2>2). Pedir edad al usuario y responder si es o no es mayor de edad</h2>
+    <form id="formAge">
+      <label>
+        Ingrese su edad:
+        <input type="text" name="age" />
+      </label>
+      <button type="submit">Informar</button>
+    </form> <br/>
+    <h5 id="infoAge"> </h5><hr/>
+
+    <h2>3). Pedir nombre y edad al usuario</h2>
+    <h6> <ul> 
+      <li>Si se llama pepita y es mayor de edad permitir ingreso a sala de espera 1</li>
+      <li>Si se llama pepita y es menor de edad permitir ingreso a sala de espera 2</li>
+      <li>Si no se llama pepita pero es mayor de edad permitir ingreso a sala de espera 3</li>
+      <li>Sino dirigir a la sala de espera</li>
+      </ul></h6>
+    <form id="formNameage">
+      <label>
+        Ingrese su nombre :
+        <input type="text" name="name1" />
+      </label>
+      <label>
+        Ingrese tu edad :
+        <input type="text" name="age1" />
+      </label>
+      <button type="submit">Asignar sala</button>
+    </form> <br/>
+    <h5 id="asigSala"></h5> <hr>
+
+    <h2>4). Pedir un número y mostrar los números pares desde 1 hasta n</h2>
+    <form id="numberShow">
+      <label>
+        Ingrese un numero :
+        <input type="text" name="number" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberPares"> </h5><hr/>
+
+    <h2>5). Pedir un número, mostrar el doble de n</h2>
+    <form id="dobleNumber">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="num" />
+      </label>
+      <button type="submit">Ejecutar</button>
+    </form> <br/>
+    <h5 id="numberDoble"> </h5><hr/>
+
+    <h2>6). Pedir un número, mostrar el triple de n</h2>
+    <form id="tripleNumber">
+      <label>
+        Ingrese un numero:
         <input type="text" name="num1" />
       </label>
+      <button type="submit">Ejecutar</button>
+    </form> <br/>
+    <h5 id="numberTriple"> </h5><hr/>
+    
 
+    <h2>7). Pedir un número, mostrar la mitad de n</h2>
+    <form id="mitadNumber">
       <label>
-        Ingrese segundo numero
+        Ingrese un numero:
         <input type="text" name="num2" />
       </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberMitad"> </h5><hr/>
 
-      <button type="submit">Sumar</button>
-    </form>
-    <br />
-    <p id="sum">Resultado de la suma: </p>
-    <hr />
-
-    <h2>2). Resta de dos numeros</h2>
-
-    <form id="form2">
+    <h2>8). Pedir un número, mostrar tercera parte de n</h2>
+    <form id="terceraNumber">
       <label>
-        Ingrese primer numero
+        Ingrese un numero:
         <input type="text" name="num3" />
       </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberTercera"> </h5><hr/>
 
+    <h2>9). Pedir un número, mostrar el cuadrado de n</h2>
+    <form id="cuadradoNumber">
       <label>
-        Ingrese segundo numero
+        Ingrese un numero:
         <input type="text" name="num4" />
       </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberCuadrado"> </h5><hr/>
 
-      <button type="submit">Restar</button>
-    </form>
-
-    <br />
-    <p id="res">Resultado de la resta: </p>
-    <hr />
-
-    <h2>3). Pedir nombre al usuario y saludarlo</h2>
-
-    <form id="form3">
+    <h2>10). Pedir un número, mostrar n reducido 5</h2>
+    <form id="menoscincoNumber">
       <label>
-        Ingrese su nombre
-        <input type="text" name="nom1" />
+        Ingrese un numero:
+        <input type="text" name="num5" />
       </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberMenos"> </h5><hr/>
 
+    <h2>11). Pedir un número, mostrar el doble de n mas 4</h2>
+    <form id="mascuatroNumber">
       <label>
-        Ingrese su apellido
-        <input type="text" name="ape1" />
+        Ingrese un numero:
+        <input type="text" name="num6" />
       </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberMascuatro"> </h5><hr/>
 
-      <button type="submit">Saludar</button>
-    </form>
+    <h2>12). Pedir un número, mostrar si es positivo, negativo o si es cero</h2>
+    <form id="tipoNumber">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="num7" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberTipo"> </h5><hr/>
 
-    <br />
-    <p id="nombre1">!Saludos! </p>
+    <h2>13). Pedir un número, mostrar si es par, impar o si es cero</h2>
+    <form id="tipNumber">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="num8" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberTip"> </h5><hr/>
+
+    <h2>14). Pedir un número, mostrar si es un número primo o no</h2>
+    <form id="primoNumber">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="num9" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberPrimo"> </h5><hr/>
+
+    <h2>15). Pedir dos números, mostrar si el primer número es divisible por el segundo</h2>
+    <form id="divisibleNumber">
+      <label>
+        Ingrese el primer numero:
+        <input type="text" name="num10" />
+      </label>
+      <label>
+        Ingrese el segundo numero:
+        <input type="text" name="num11" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberDivisible"> </h5><hr/>
+
+    <h2>16). Pedir dos números y el nombre de una operación, mostrar el resultado</h2>
+    <form id="operacionNumber">
+      <label>
+        Ingrese el primer numero:
+        <input type="text" name="num12" />
+      </label>
+      <label>
+        Ingrese el segundo numero:
+        <input type="text" name="num13" />
+      </label> 
+      <label>
+        Ingrese la operacion que quiere realizar: sumar, restar, multiplicar o dividir
+        <input type="text" name="opera" />
+      </label>
+      <button type="submit">Resultado</button>
+    </form> <br/>
+    <h5 id="numberOperacion"> </h5><hr/>
+
+   <h2>17). Pedir un número, mostrar la suma total desde 1 hasta n</h2>
+    <form id="sumaNumber">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="sum1" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberSuma"> </h5><hr/>
+
+    <h2>18). Pedir un número, mostrar la suma de los números pares desde 1 hasta n</h2>
+    <form id="sumaPares">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="sum2" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="paresSuma"> </h5><hr/>
+
+    <h2>19). Pedir un número, mostrar la suma de los números impares desde 1 hasta n</h2>
+    <form id="sumaImpares">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="sum3" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="imparesSuma"> </h5><hr/>
+
+    <h2>20). Pedir un número, mostrar multiplos de 3 desde 1 hasta n</h2>
+    <form id="tipNumber">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="num8" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberTip"> </h5><hr/>
+
+    <h2>21). Pedir un número, mostrar los números desde n hasta 0</h2>
+    <form id="tipNumber">
+      <label>
+        Ingrese un numero:
+        <input type="text" name="num8" />
+      </label>
+      <button type="submit">Mostrar</button>
+    </form> <br/>
+    <h5 id="numberTip"> </h5><hr/> -->
 
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
