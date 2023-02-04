@@ -256,11 +256,34 @@ $sumaImpares.addEventListener("submit", (e) =>{
             resultado += i;
         }
     }
-    $imparesSuma.textContent = `La suma total de los numeros pares de ${impar} es: ${resultado}`
+    $imparesSuma.textContent = `La suma total de los numeros impares de ${impar} es: ${resultado}`
 });
 // 20) Pedir un número, mostrar multiplos de 3 desde 1 hasta n
-
+const $multiNumber = document.getElementById("multiNumber");
+const $numberMulti = document.getElementById("numberMulti");
+$multiNumber.addEventListener("submit", (e) =>{
+    e.preventDefault();
+    const mult = Number($multiNumber.mult.value);
+    let result = 1
+    for (let ite = 1; ite <= mult ; ite++) {
+        if (ite % 3 === 0) {
+            result += `-${ite}`;
+        }
+    }
+    $numberMulti.textContent = `Los mutiplos de 3 del numero ${mult} desde el uno son: ${result}`
+});
 // 21) Pedir un número, mostrar los números desde n hasta 0
+const $ceroNumber = document.getElementById("ceroNumber");
+const $numberCero = document.getElementById("numberCero");
+$ceroNumber.addEventListener("submit", (e) =>{
+    e.preventDefault();
+    const most = Number($ceroNumber.most.value);
+    let result =[]
+    for (let ite = most; ite > -1 ; ite--) {
+        result += ` [${ite}] `;
+    }
+    $numberCero.textContent = `Los numeros desde ${most} hasta 0 son: ${result}`
+});
 
 
 
